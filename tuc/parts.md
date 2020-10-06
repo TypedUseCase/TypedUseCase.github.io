@@ -1,7 +1,7 @@
 Tuc Parts
 =========
 
-[Home](/tuc-console/) / [Tuc](/tuc-console/tuc/) / Parts
+[Home](/) / [Tuc](/tuc/) / Parts
 
 ---
 
@@ -27,7 +27,7 @@ There **must** be at lease one part of the use-case in the Tuc definition.
 ---
 
 ## Lifeline
-> Life line is the execution of the [**Initiator**](/tuc-console/domain/#initiator).
+> Life line is the execution of the [**Initiator**](/domain/#initiator).
 
 * It **may** contain other use-case parts, indented by one level.
 * It _activates_ an Initiator and _deactivates_ it, in the end of a lifeline.
@@ -56,7 +56,7 @@ MainService
 
 Results:
 
-![lifeline.svg](/tuc-console/tuc/examples/lifeline.svg)
+![lifeline.svg](/tuc/examples/lifeline.svg)
 
 ```puml
 @startuml lifeline
@@ -95,7 +95,7 @@ section There is just a section
 
 Results:
 
-![section.svg](/tuc-console/tuc/examples/section.svg)
+![section.svg](/tuc/examples/section.svg)
 
 ```puml
 @startuml section
@@ -161,7 +161,7 @@ MainService                             // MainService is the caller
 
 Results:
 
-![service-method-call.svg](/tuc-console/tuc/examples/service-method-call.svg)
+![service-method-call.svg](/tuc/examples/service-method-call.svg)
 
 ```puml
 @startuml service-method-call
@@ -236,7 +236,7 @@ MainService                                     // MainService is the caller
 
 Results:
 
-![post-data.svg](/tuc-console/tuc/examples/post-data.svg)
+![post-data.svg](/tuc/examples/post-data.svg)
 
 ```puml
 @startuml post-data
@@ -311,7 +311,7 @@ MainService                                     // MainService is the caller
 
 Results:
 
-![read-data.svg](/tuc-console/tuc/examples/read-data.svg)
+![read-data.svg](/tuc/examples/read-data.svg)
 
 ```puml
 @startuml read-data
@@ -390,7 +390,7 @@ MainService                                     // MainService is the caller
 
 Results:
 
-![post-event.svg](/tuc-console/tuc/examples/post-event.svg)
+![post-event.svg](/tuc/examples/post-event.svg)
 
 ```puml
 @startuml post-event
@@ -468,7 +468,7 @@ MainService                                     // MainService is the caller
 
 Results:
 
-![read-event.svg](/tuc-console/tuc/examples/read-event.svg)
+![read-event.svg](/tuc/examples/read-event.svg)
 
 ```puml
 @startuml read-event
@@ -504,7 +504,7 @@ deactivate MainService
         // indented execution of the method
 ```
 
-Service Type is found in the Domain Types, it must contain a HandlerName as a field with a function (_[handler](/tuc-console/domain/#handler)_). The type of the Handler is used for checking a Stream Type.
+Service Type is found in the Domain Types, it must contain a HandlerName as a field with a function (_[handler](/domain/#handler)_). The type of the Handler is used for checking a Stream Type.
 
 **NOTE**: Service will became a _caller_ in its execution body.
 
@@ -547,7 +547,7 @@ participants
 
 Results:
 
-![handle-event-in-stream.svg](/tuc-console/tuc/examples/handle-event-in-stream.svg)
+![handle-event-in-stream.svg](/tuc/examples/handle-event-in-stream.svg)
 
 ```puml
 @startuml handle-event-in-stream
@@ -595,7 +595,7 @@ group Grouped together
 
 Results:
 
-![group.svg](/tuc-console/tuc/examples/group.svg)
+![group.svg](/tuc/examples/group.svg)
 
 ```puml
 @startuml group
@@ -675,7 +675,7 @@ else
 
 Results:
 
-![if-else.svg](/tuc-console/tuc/examples/if-else.svg)
+![if-else.svg](/tuc/examples/if-else.svg)
 
 ```puml
 @startuml if-else
@@ -736,7 +736,7 @@ loop until it's done
 
 Results:
 
-![loop.svg](/tuc-console/tuc/examples/loop.svg)
+![loop.svg](/tuc/examples/loop.svg)
 
 ```puml
 @startuml loop
@@ -803,7 +803,7 @@ MainService
 
 Results:
 
-![note.svg](/tuc-console/tuc/examples/note.svg)
+![note.svg](/tuc/examples/note.svg)
 
 ```puml
 @startuml note
@@ -878,7 +878,7 @@ MainService
 
 Results:
 
-![left-note.svg](/tuc-console/tuc/examples/left-note.svg)
+![left-note.svg](/tuc/examples/left-note.svg)
 
 ```puml
 @startuml left-note
@@ -956,7 +956,7 @@ MainService
 
 Results:
 
-![right-note.svg](/tuc-console/tuc/examples/right-note.svg)
+![right-note.svg](/tuc/examples/right-note.svg)
 
 ```puml
 @startuml right-note
@@ -1028,7 +1028,7 @@ MainService
 
 Results:
 
-![do.svg](/tuc-console/tuc/examples/do.svg)
+![do.svg](/tuc/examples/do.svg)
 
 ```puml
 @startuml do

@@ -1,7 +1,7 @@
 Tuc - Example
 =============
 
-[Home](/tuc-console/) / [Tuc](/tuc-console/tuc/) / Example
+[Home](/) / [Tuc](/tuc/) / Example
 
 ---
 
@@ -12,7 +12,7 @@ Interaction collector service identify a person and accepts an interaction.
 
 *It is just a simplified real-life process.*
 
-**Note**: All files are in the [example](https://github.com/MortalFlesh/tuc-console/tree/master/example) dir.
+**Note**: All files are in the [example](https://github.com/TypedUseCase/tuc-console/tree/master/example) dir.
 
 ## domain.fsx
 ```fs
@@ -171,4 +171,4 @@ deactivate GenericService
 @enduml
 ```
 
-![Example PlantUML result](https://raw.githubusercontent.com/MortalFlesh/tuc-console/master/example/graph.svg)
+![Example PlantUML result](https://raw.githubusercontent.com/TypedUseCase/tuc-console/master/example/graph.svg)

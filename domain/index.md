@@ -1,7 +1,7 @@
 Domain
 ======
 
-[Home](/tuc-console/) / Domain
+[Home](/) / Domain
 
 ---
 
@@ -10,14 +10,14 @@ Domain
 It should only contain `Types` (_at least for now_).
 
 ## Table of contents
-- [How does it work?](/tuc-console/domain/#how-does-it-work)
-- [Common Types](/tuc-console/domain/#common-types)
-    - [Initiator](/tuc-console/domain/#initiator)
-    - [Data Object](/tuc-console/domain/#data-object)
-    - [Stream](/tuc-console/domain/#stream)
-    - [Handler](/tuc-console/domain/#handler)
-- [Domain example](/tuc-console/domain/#domain-example)
-- [Share types between domains](/tuc-console/domain/#share-types-between-domains)
+- [How does it work?](/domain/#how-does-it-work)
+- [Common Types](/domain/#common-types)
+    - [Initiator](/domain/#initiator)
+    - [Data Object](/domain/#data-object)
+    - [Stream](/domain/#stream)
+    - [Handler](/domain/#handler)
+- [Domain example](/domain/#domain-example)
+- [Share types between domains](/domain/#share-types-between-domains)
 
 ## How does it work?
 It uses a [Fsharp.Compiler.Service](https://github.com/fsharp/FSharp.Compiler.Service) under the hood.
@@ -61,7 +61,7 @@ type MyMainService = Initiator
 ### Data Object
 > Data object is defined as a list of Data.
 
-It allows you to [post data into the data object](/tuc-console/tuc/parts.html#post-data) and [read data from data object](/tuc-console/tuc/parts.html#read-data).
+It allows you to [post data into the data object](/tuc/parts.html#post-data) and [read data from data object](/tuc/parts.html#read-data).
 
 ```fs
 type DataObject<'Data> = DataObject of 'Data list
@@ -83,7 +83,7 @@ and Person = {
 ### Stream
 > Stream is defined as a list of Events. Stream type is one of a specific Data Objects.
 
-It allows you to [post events into the stream](/tuc-console/tuc/parts.html#post-event), [read events from stream](/tuc-console/tuc/parts.html#read-event) or [handle an event in stream](/tuc-console/tuc/parts.html#handle-event-in-stream).
+It allows you to [post events into the stream](/tuc/parts.html#post-event), [read events from stream](/tuc/parts.html#read-event) or [handle an event in stream](/tuc/parts.html#handle-event-in-stream).
 
 ```fs
 type Stream<'Event> = Stream of 'Event list
@@ -105,7 +105,7 @@ and InteractionEvent =
 
 It must be a generic type with exactly one generic parameter and it must have a `Handler` suffix.
 
-Handlers allow you to handle a Data from DataObjects, by a [special tuc syntax](/tuc-console/tuc/parts.html#handle-event-in-stream).
+Handlers allow you to handle a Data from DataObjects, by a [special tuc syntax](/tuc/parts.html#handle-event-in-stream).
 
 ```fs
 type Handler<'Data> = Handler of ('Data -> unit)
