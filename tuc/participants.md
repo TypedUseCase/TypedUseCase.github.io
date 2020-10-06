@@ -1,7 +1,7 @@
 Tuc Participants
 ================
 
-[Home](/tuc-console/) / [Tuc](/tuc-console/tuc/) / Participants
+[Home](/) / [Tuc](/tuc/) / Participants
 
 ---
 
@@ -41,7 +41,7 @@ participants                                    // keyword starting a participan
 ### Type Name
 > Participant's Domain type name.
 
-* It **must** be defined in [Domain Types](/tuc-console/domain/#domain-types) as a `Record` or as the [Initiator](/tuc-console/domain/#initiator).
+* It **must** be defined in [Domain Types](/domain/#domain-types) as a `Record` or as the [Initiator](/domain/#initiator).
 * So it **must** contain only chars, available for F# type name.
 
 **TIP**: Use a PascalCase for type name.
@@ -196,7 +196,7 @@ participants                                            // keyword starting a pa
     [{TypeName}Stream] {DomainName} ( as "{Alias}" )    // active participant
 ```
 
-**NOTE**: It has a [special definition in the domain types](/tuc-console/domain/#stream).
+**NOTE**: It has a [special definition in the domain types](/domain/#stream).
 
 ### Example
 ```fs
